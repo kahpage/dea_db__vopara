@@ -101,7 +101,7 @@ def main():
             if a_tag and a_tag.has_attr("href"):
                 circle_url = a_tag["href"]
             pen_name = sanitize_string(col_tags[1].get_text(strip=True))
-            booth = sanitize_string(col_tags[2].get_text(strip=True))
+            booth_number = sanitize_string(col_tags[2].get_text(strip=True))
 
             position = f"{current_block}, {booth}"
             circle = Circle(

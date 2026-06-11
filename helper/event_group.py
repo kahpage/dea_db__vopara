@@ -159,7 +159,7 @@ if __name__ == "__main__":
 ＴＴＣ６・ボーパラ２ 館内配置図
 A～C … ツインテールカーニバル６
 D～H … VOCALOID PARADISE 2""",
-            last_edited="2026.05.30",
+            last_edited="2026.06.11",
         )
 
         # Retrieve circles
@@ -180,9 +180,9 @@ D～H … VOCALOID PARADISE 2""",
                         "https://web.archive.org/web/20120918044032/http://ttc.ninja-web.net/vo-para/vo-para03_hyoushi.jpg",
                         (RT.Reliable, OT.Official),
                     ),
-                    Source(f"Artist: {vopara_main_url}", (RT.Reliable, OT.Official))
+                    Source(f"Artist: {vopara_main_url}", (RT.Reliable, OT.Official)),
                 ],
-                comments="tukinan 様 （LUPINASU）"
+                comments="tukinan 様 （LUPINASU）",
             ),
             Medium(
                 "03_100328_layout.pdf",
@@ -203,7 +203,7 @@ D～H … VOCALOID PARADISE 2""",
         ]
         event = Event(
             aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
-            dates="2009.11.22",
+            dates="2010.03.28",
             circles=[],
             media=media_,
             sources=[
@@ -224,7 +224,7 @@ D～H … VOCALOID PARADISE 2""",
 館内配置図
 
 第１展示場B面がサークルスペースでいっぱいとなったため、今回の「乙HiME☆復活祭７」「VOCALOID PARADISE 3」では、別途、大会議室をコスプレ撮影エリアとして用意しています。""",
-            last_edited="2026.05.30",
+            last_edited="2026.06.11",
         )
 
         # Retrieve circles
@@ -235,7 +235,7 @@ D～H … VOCALOID PARADISE 2""",
     if i in active_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
-        vopara_main_url = ""
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para04_list.htm"
 
         media_ = [
             Medium(
@@ -246,7 +246,7 @@ D～H … VOCALOID PARADISE 2""",
                         (RT.Reliable, OT.Official),
                     )
                 ],
-                comments="Nacht 様 （シフトライトアリスメティック）"
+                comments="Nacht 様 （シフトライトアリスメティック）",
             ),
             Medium(
                 "04_101031_layout.pdf",
@@ -256,7 +256,7 @@ D～H … VOCALOID PARADISE 2""",
         locations = [
             Location(
                 iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
-                description=" 愛知県産業労働センター（ウインクあいち） ６階展示場",
+                description="愛知県産業労働センター（ウインクあいち） ６階展示場",
                 sources=[
                     Source(
                         vopara_main_url,
@@ -267,7 +267,7 @@ D～H … VOCALOID PARADISE 2""",
         ]
         event = Event(
             aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
-            dates="2009.11.22",
+            dates="2010.10.31",
             circles=[],
             media=media_,
             sources=[
@@ -282,7 +282,143 @@ D～H … VOCALOID PARADISE 2""",
 同時開催： 「あンた、背中が透けてるじぇ！！ ２回目」（咲-saki-）
 
 館内配置図（PDFファイル）""",
-            last_edited="2026.05.30",
+            last_edited="2026.06.11",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 5  # ==== vopara5 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para05_list.htm"
+
+        media_ = [
+            Medium(
+                "05_20120918044130_vo-para05.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20120918044130/http://ttc.ninja-web.net/vo-para/vo-para05.jpg",
+                        (RT.Reliable, OT.Official),
+                    ),
+                    Source(f"Artist: {vopara_main_url}", (RT.Reliable, OT.Official)),
+                ],
+                comments="ボーパラ５チラシ絵　プリンプリン様 （Lachenalia）",
+            ),
+            Medium(
+                "05_110327_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781203776946!5m2!1sen!2sfr",
+                description="京都市勧業館（みやこめっせ）第３展示場全面",
+                sources=[
+                    Source(
+                        vopara_main_url,
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2011.03.27",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    f"Date, Participating circles, Notes: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="""Notes: この度は、ボーパラ５に多くの申込ありがとうございました。
+募集数を大幅に上回る285サークル316スペースもの申込がありましたが、３階Ａ面→３階全面へ拡大を行ったため、申込されたサークル様は全て当選となりました。
+また、今回はボーパラでは初めての企業出展２社を受け入れました。
+
+ボーパラ５＋同時開催イベントで実施した東日本大震災の義捐金払込報告はこちら。
+
+開催日： 2011年3月27日（日）
+開催場所： 京都市勧業館（みやこめっせ） ３階 第３展示場A面 → 第３展示場全面
+同時開催：
+　・リトバスパーティー４（リトルバスターズ！）
+　・AB即売会戦線２（Angel Beats!）
+　・Keyパーティー（Key作品総合）
+　・MUSIC COMMUNICATION 3（音系）
+　・乙HiME☆復活祭 9（舞-HiME/舞-乙HiME）""",
+            last_edited="2026.06.11",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 6  # ==== vopara6 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para06_list.htm"
+
+        media_ = [
+            Medium(
+                "06_20111006041646_vo-para06.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20111006041646/http://ttc.ninja-web.net/vo-para/index.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="ボーパラ６チラシ絵　田村ヒロ 様 （stardust）",
+            ),
+            Medium(
+                "06_20111006041646_banner.gif",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+            Medium(
+                "06_111030_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                description="愛知県産業労働センター（ウインクあいち）６階・７階展示場",
+                sources=[
+                    Source(
+                        vopara_main_url,
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2011.10.30",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20111006041646/http://ttc.ninja-web.net/vo-para/index.html",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    f"Participating circles, Notes: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="""Notes: この度はボーパラ６に多くの申込ありがとうございました。
+おかげさまで、一次締切終了時点で募集数150スペースを越えて満了しましたので、サークル参加受付を終了しました。
+7/29までに全ての手続を済ませたサークル様は当選です。
+また、館内配置を見直して、7/29までに全ての手続が済んでいない仮受付状態のサークル様も、全て当選としました。
+
+今回、ボーパラ名古屋開催としては、最多の138サークル154スペースの申込がございました。
+そして前回同様、「VOCALOID STORE」「（株）インターネット」の企業出展２社の参加がございます。""",
+            last_edited="2026.06.11",
         )
 
         # Retrieve circles
@@ -321,7 +457,163 @@ D～H … VOCALOID PARADISE 2""",
     #         ],
     #         locations=locations,
     #         comments="""Notes:""",
-    #         last_edited="2026.05.30",
+    #         last_edited="2026.06.11",
+    #     )
+
+    #     # Retrieve circles
+    #     event.circles = retrieve_circles(event_name)
+    #     events.append(event)
+
+    # i = # ==== vopara ====
+    # if i in active_events:
+    #     event_name = f"vopara{i}"
+    #     print(f"Processing {event_name} ...")
+    #     vopara_main_url = ""
+
+    #     media_ = [
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #     ]
+    #     locations = [
+    #         # Location(
+    #         #     iframe_url="",
+    #         #     description="",
+    #         #     sources=[
+    #         #         Source(, (ReliabilityTypes.Reliable, OriginTypes.Official))
+    #         #     ],
+    #         # ),
+    #     ]
+    #     event = Event(
+    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+    #         dates="2009.11.22",
+    #         circles=[],
+    #         media=media_,
+    #         sources=[
+    #             Source(
+    #                 f"Date, Participating circles, Notes: {vopara_main_url}",
+    #                 (RT.Reliable, OT.Official),
+    #             ),
+    #         ],
+    #         locations=locations,
+    #         comments="""Notes:""",
+    #         last_edited="2026.06.11",
+    #     )
+
+    #     # Retrieve circles
+    #     event.circles = retrieve_circles(event_name)
+    #     events.append(event)
+
+    # i = # ==== vopara ====
+    # if i in active_events:
+    #     event_name = f"vopara{i}"
+    #     print(f"Processing {event_name} ...")
+    #     vopara_main_url = ""
+
+    #     media_ = [
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #     ]
+    #     locations = [
+    #         # Location(
+    #         #     iframe_url="",
+    #         #     description="",
+    #         #     sources=[
+    #         #         Source(, (ReliabilityTypes.Reliable, OriginTypes.Official))
+    #         #     ],
+    #         # ),
+    #     ]
+    #     event = Event(
+    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+    #         dates="2009.11.22",
+    #         circles=[],
+    #         media=media_,
+    #         sources=[
+    #             Source(
+    #                 f"Date, Participating circles, Notes: {vopara_main_url}",
+    #                 (RT.Reliable, OT.Official),
+    #             ),
+    #         ],
+    #         locations=locations,
+    #         comments="""Notes:""",
+    #         last_edited="2026.06.11",
+    #     )
+
+    #     # Retrieve circles
+    #     event.circles = retrieve_circles(event_name)
+    #     events.append(event)
+
+    # i = # ==== vopara ====
+    # if i in active_events:
+    #     event_name = f"vopara{i}"
+    #     print(f"Processing {event_name} ...")
+    #     vopara_main_url = ""
+
+    #     media_ = [
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #     ]
+    #     locations = [
+    #         # Location(
+    #         #     iframe_url="",
+    #         #     description="",
+    #         #     sources=[
+    #         #         Source(, (ReliabilityTypes.Reliable, OriginTypes.Official))
+    #         #     ],
+    #         # ),
+    #     ]
+    #     event = Event(
+    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+    #         dates="2009.11.22",
+    #         circles=[],
+    #         media=media_,
+    #         sources=[
+    #             Source(
+    #                 f"Date, Participating circles, Notes: {vopara_main_url}",
+    #                 (RT.Reliable, OT.Official),
+    #             ),
+    #         ],
+    #         locations=locations,
+    #         comments="""Notes:""",
+    #         last_edited="2026.06.11",
+    #     )
+
+    #     # Retrieve circles
+    #     event.circles = retrieve_circles(event_name)
+    #     events.append(event)
+
+    # i = # ==== vopara ====
+    # if i in active_events:
+    #     event_name = f"vopara{i}"
+    #     print(f"Processing {event_name} ...")
+    #     vopara_main_url = ""
+
+    #     media_ = [
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+    #     ]
+    #     locations = [
+    #         # Location(
+    #         #     iframe_url="",
+    #         #     description="",
+    #         #     sources=[
+    #         #         Source(, (ReliabilityTypes.Reliable, OriginTypes.Official))
+    #         #     ],
+    #         # ),
+    #     ]
+    #     event = Event(
+    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+    #         dates="2009.11.22",
+    #         circles=[],
+    #         media=media_,
+    #         sources=[
+    #             Source(
+    #                 f"Date, Participating circles, Notes: {vopara_main_url}",
+    #                 (RT.Reliable, OT.Official),
+    #             ),
+    #         ],
+    #         locations=locations,
+    #         comments="""Notes:""",
+    #         last_edited="2026.06.11",
     #     )
 
     #     # Retrieve circles

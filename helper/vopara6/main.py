@@ -56,8 +56,8 @@ def sanitize_string(s: str) -> str:
 def main():
     """Create circles.json"""
     print(f"Retrieving circles information for {NAME} ...")
-    raw_url = "https://ttc.ninja-web.net/vo-para/vo-para_list.htm"
-
+    raw_url = "https://ttc.ninja-web.net/vo-para/vo-para06_list.htm"
+    
     # Parse the HTML content to extract circle information
     soup = retrieve_soup_fetch_if_needed(raw_url)
     circles = []
@@ -89,7 +89,7 @@ def main():
                 continue
             current_block = sanitize_string(m.group(1))
         else:  #
-            if len(col_tags) < 3 or len(col_tags) > 5:
+            if len(col_tags) < 4 or len(col_tags) > 5:
                 print(
                     f"WARNING: invalid row (wrong column count) {len(col_tags)}) {row=}"
                 )
@@ -101,14 +101,20 @@ def main():
             if a_tag and a_tag.has_attr("href"):
                 circle_url = a_tag["href"]
             pen_name = sanitize_string(col_tags[1].get_text(strip=True))
-            booth_number = sanitize_string(col_tags[2].get_text(strip=True))
+            main_character = sanitize_string(col_tags[2].get_text(strip=True))
+            booth_number = sanitize_string(col_tags[3].get_text(strip=True))
 
-            position = f"{current_block}, {booth}"
+            comment_parts: list[str] = []
+            if main_character:
+                comment_parts.append(f"Main character/vocaloid: {main_character}")
+
+            position = f"{current_block}, {booth_number}"
             circle = Circle(
                 aliases=[circle_name],
                 pen_names=[pen_name] if pen_name else None,
                 links=[circle_url] if circle_url else None,
                 position=position,
+                comments=", ".join(comment_parts) if comment_parts else None,
             )
 
             circles.append(circle)
