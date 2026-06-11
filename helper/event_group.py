@@ -118,10 +118,182 @@ if __name__ == "__main__":
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
+    i = 2  # ==== vopara2 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = ""
+
+        media_ = [
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                description="愛知県産業労働センター７階展示場",
+                sources=[
+                    Source(
+                        vopara_main_url,
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2009.11.22",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    f"Date, Participating circles, Notes: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="""Notes: 開催日： 2009年11月22日（日）
+開催場所： 愛知県産業労働センター７階展示場
+同時開催： ツインテールカーニバル６
+
+ＴＴＣ６・ボーパラ２ 館内配置図
+A～C … ツインテールカーニバル６
+D～H … VOCALOID PARADISE 2""",
+            last_edited="2026.05.30",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 3  # ==== vopara3 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para03_list.htm"
+
+        media_ = [
+            Medium(
+                "03_20120918044032_vo-para03_hyoushi.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20120918044032/http://ttc.ninja-web.net/vo-para/vo-para03_hyoushi.jpg",
+                        (RT.Reliable, OT.Official),
+                    ),
+                    Source(f"Artist: {vopara_main_url}", (RT.Reliable, OT.Official))
+                ],
+                comments="tukinan 様 （LUPINASU）"
+            ),
+            Medium(
+                "03_100328_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781203776946!5m2!1sen!2sfr",
+                description="京都市勧業館（みやこめっせ） ",
+                sources=[
+                    Source(
+                        vopara_main_url,
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2009.11.22",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    f"Date, Participating circles, Notes: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="""Notes: 開催日： 2010年3月28日（日）
+開催場所： 京都市勧業館（みやこめっせ） 地下１階 第１展示場
+同時開催： 乙HiME☆復活祭 Seven
+
+全サークル当選のお知らせ
+多くの申込ありがとうございました。
+乙HiME☆復活祭側に割り当てられた分をボーパラ側に回して調整を行った結果、二次募集期間に申し込まれたサークルも含めて、全て当選となりました。
+
+館内配置図
+
+第１展示場B面がサークルスペースでいっぱいとなったため、今回の「乙HiME☆復活祭７」「VOCALOID PARADISE 3」では、別途、大会議室をコスプレ撮影エリアとして用意しています。""",
+            last_edited="2026.05.30",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 4  # ==== vopara4 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = ""
+
+        media_ = [
+            Medium(
+                "04_20140903032737_vo-para04b.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20140903032737/http://ttc.ninja-web.net/vo-para/vo-para04b.jpg",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+                comments="Nacht 様 （シフトライトアリスメティック）"
+            ),
+            Medium(
+                "04_101031_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                description=" 愛知県産業労働センター（ウインクあいち） ６階展示場",
+                sources=[
+                    Source(
+                        vopara_main_url,
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2009.11.22",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    f"Date, Participating circles, Notes: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            comments="""Notes: 開催日： 2010年10月31日（日）
+開催場所： 愛知県産業労働センター（ウインクあいち） ６階展示場
+同時開催： 「あンた、背中が透けてるじぇ！！ ２回目」（咲-saki-）
+
+館内配置図（PDFファイル）""",
+            last_edited="2026.05.30",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
     # i = # ==== vopara ====
     # if i in active_events:
     #     event_name = f"vopara{i}"
     #     print(f"Processing {event_name} ...")
+    #     vopara_main_url = ""
 
     #     media_ = [
     #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
@@ -137,17 +309,18 @@ if __name__ == "__main__":
     #         # ),
     #     ]
     #     event = Event(
-    #         aliases=[""],
-    #         dates="",
+    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+    #         dates="2009.11.22",
     #         circles=[],
     #         media=media_,
     #         sources=[
     #             Source(
-    #                 f"Date, Participating circles: ",
+    #                 f"Date, Participating circles, Notes: {vopara_main_url}",
     #                 (RT.Reliable, OT.Official),
     #             ),
     #         ],
     #         locations=locations,
+    #         comments="""Notes:""",
     #         last_edited="2026.05.30",
     #     )
 
