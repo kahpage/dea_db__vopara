@@ -67,7 +67,7 @@ def retrieve_circles(event_name: str) -> list[Circle]:
 
 if __name__ == "__main__":
     events: list[Event] = []
-    active_events: list[int | str] = list(range(1, 14))
+    active_events: list[int | str] = list(range(1, 14 + 1))
 
     i = 1  # ==== vopara1 ====
     if i in active_events:
@@ -701,7 +701,10 @@ D～H … VOCALOID PARADISE 2""",
                 iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.000972522528!2d136.8957839758592!3d35.13164927276959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe92208121%3A0xc830505a7700eaa6!2sNagoya%20Congress%20Center!5e0!3m2!1sen!2sfr!4v1781211470110!5m2!1sen!2sfr",
                 description="名古屋国際会議場 イベントホール",
                 sources=[
-                    Source("https://web.archive.org/web/20160219102424/http://ttc.ninja-web.net/vo-para/index.html", (ReliabilityTypes.Reliable, OriginTypes.Official))
+                    Source(
+                        "https://web.archive.org/web/20160219102424/http://ttc.ninja-web.net/vo-para/index.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
                 ],
             ),
         ]
@@ -729,53 +732,240 @@ D～H … VOCALOID PARADISE 2""",
         event.circles = retrieve_circles(event_name)
         events.append(event)
 
-    # i = # ==== vopara ====
-    # if i in active_events:
-    #     event_name = f"vopara{i}"
-    #     print(f"Processing {event_name} ...")
-    #     vopara_main_url = ""
+    i = 12  # ==== vopara12 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para12_list.htm"
 
-    #     media_ = [
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #         # Medium("", [Source("", (RT.Reliable, OT.Official))]),
-    #     ]
-    #     locations = [
-    #         # Location(
-    #         #     iframe_url="",
-    #         #     description="",
-    #         #     sources=[
-    #         #         Source(, (ReliabilityTypes.Reliable, OriginTypes.Official))
-    #         #     ],
-    #         # ),
-    #     ]
-    #     event = Event(
-    #         aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
-    #         dates="",
-    #         circles=[],
-    #         media=media_,
-    #         sources=[
-    #             Source(
-    #                 f"Date: {vopara_main_url}",
-    #                 (RT.Reliable, OT.Official),
-    #             ),
-    #             # Source(
-    #             #     f"Participating circles: {vopara_main_url}",
-    #             #     (RT.Reliable, OT.Official),
-    #             # ),
-    #         ],
-    #         locations=locations,
-    #         # comments="""Notes:""",
-    #         last_edited="2026.06.11",
-    #     )
+        media_ = [
+            Medium(
+                "12_1355.jpg",
+                [
+                    Source(
+                        "https://vocadb.net/E/1355/vocaloid-paradise-12",
+                        (RT.Likely, OT.External),
+                    )
+                ],
+            ),
+            Medium(
+                "12_171015_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.000972522528!2d136.8957839758592!3d35.13164927276959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe92208121%3A0xc830505a7700eaa6!2sNagoya%20Congress%20Center!5e0!3m2!1sen!2sfr!4v1781211470110!5m2!1sen!2sfr",
+                description="名古屋国際会議場 イベントホール",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20171003002242/http://ttc.ninja-web.net/vo-para/index.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2017.10.15",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20171003002242/http://ttc.ninja-web.net/vo-para/index.html",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    f"Participating circles: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            # comments="""Notes:""",
+            last_edited="2026.06.11",
+        )
 
-    #     # Retrieve circles
-    #     event.circles = retrieve_circles(event_name)
-    #     events.append(event)
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 13  # ==== vopara13 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para13_list.htm"
+
+        media_ = [
+            Medium(
+                "13_20211203064330_vo-para13.jpg",
+                [
+                    Source(
+                        "https://web.archive.org/web/20211203064330/http://ttc.ninja-web.net/vo-para/index.html",
+                        (RT.Reliable, OT.Official),
+                    )
+                ],
+            ),
+            Medium(
+                "13_180916_layout.pdf",
+                [Source(vopara_main_url, (RT.Reliable, OT.Official))],
+            ),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+            # Medium("", [Source("", (RT.Reliable, OT.Official))]),
+        ]
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13051.9153575633!2d136.8873299!3d35.1322016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe829a2f51%3A0x284de675a464956a!2sShirotori%20Hall!5e0!3m2!1sen!2sfr!4v1781209672065!5m2!1sen!2sfr",
+                description="名古屋国際会議場 白鳥ホール",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20180925180443/http://ttc.ninja-web.net/vo-para/index.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2018.09.16",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20180925180443/http://ttc.ninja-web.net/vo-para/index.html",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    f"Participating circles: {vopara_main_url}",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            # comments="""Notes:""",
+            last_edited="2026.06.11",
+        )
+
+        # Retrieve circles
+        event.circles = retrieve_circles(event_name)
+        events.append(event)
+
+    i = 14  # ==== vopara14 ====
+    if i in active_events:
+        event_name = f"vopara{i}"
+        print(f"Processing {event_name} ...")
+        # vopara_main_url = ""
+
+        media_ = []
+        locations = [
+            Location(
+                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.866190194564!2d137.1268545758678!3d35.33414417270119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a70848ce44f%3A0xaea80b3888b9c8db!2sSangyobunka%20Center!5e0!3m2!1sen!2sfr!4v1781213114333!5m2!1sen!2sfr",
+                description="多治見市産業文化センター ５階ホール",
+                sources=[
+                    Source(
+                        "https://web.archive.org/web/20240714193723/http://ttc.ninja-web.net/vo-para/index.html",
+                        (ReliabilityTypes.Reliable, OriginTypes.Official),
+                    )
+                ],
+            ),
+        ]
+        event = Event(
+            aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
+            dates="2019.10.20 -> CANCELLED",
+            circles=[],
+            media=media_,
+            sources=[
+                Source(
+                    "Date: https://web.archive.org/web/20240714193723/http://ttc.ninja-web.net/vo-para/index.html",
+                    (RT.Reliable, OT.Official),
+                ),
+                Source(
+                    "Was cancelled: https://x.com/vo_para/status/1130104714132111360",
+                    (RT.Reliable, OT.Official),
+                ),
+            ],
+            locations=locations,
+            description='Cancelled, the organizing committee suggested to participate in VOCALOID STREET in 多治見 instead (see "Was cancelled" source)',
+            # comments="""Notes:""",
+            last_edited="2026.06.11",
+        )
+
+        # Retrieve circles
+        # event.circles = retrieve_circles(event_name)
+        events.append(event)
 
     # ==== event group ====
     media = [
+        Medium(
+            "banner1_20111006041646_vp-bn01.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20131019131152/http://ttc.ninja-web.net/vo-para/vp-bn01.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "banner2_20080626131159_banner.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20111112091158/http://ttc.ninja-web.net/vo-para/vp-bn02.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "banner3_20100114165308_vp-bn03.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20111112085714/http://ttc.ninja-web.net/vo-para/vp-bn03.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "banner4_20111006041646_vp-bn04.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20111112085502/http://ttc.ninja-web.net/vo-para/vp-bn04.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "banner5_20111006041646_vp-bn05.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20111112090115/http://ttc.ninja-web.net/vo-para/vp-bn05.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "vp-bn06.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20130504141410/http://ttc.ninja-web.net/vo-para/vp-bn06.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "vp-bn07.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20130504141410/http://ttc.ninja-web.net/vo-para/vp-bn07.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
+        Medium(
+            "banner6_20130423043601_banner.jpg",
+            [
+                Source(
+                    "https://web.archive.org/web/20131019135636/http://ttc.ninja-web.net/vo-para/vp-bn08.jpg",
+                    (RT.Reliable, OT.Official),
+                )
+            ],
+        ),
         # Medium("",
         #        [Source("", (RT.Reliable, OT.Official))]),
     ]
