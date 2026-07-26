@@ -84,7 +84,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.4252281700215!2d136.9215652758576!3d35.096091372781785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bbf4ac7e49f%3A0x896daa6414e9228d!2sNippon%20Gaishi%20Forum!5e0!3m2!1sfr!2sfr!4v1781202342453!5m2!1sfr!2sfr",
+                coordinates=(35.0960914, 136.9241402),
+                address="5 Chome-1-16 Higashimatabeecho, Minami Ward, Nagoya, Aichi 457-0833, Japan",
                 description="日本ガイシフォーラム（旧称：名古屋市総合体育館 サン笠寺）",
                 sources=[
                     Source(
@@ -92,6 +93,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj8MzT8MDc2f6y-m4HKbW409CgcjzT-W5sICqc_6FGCydMMyIdsr37ZfspiGt3FF4_viq4XCwlLXeK4sHeI428n6LGylj2FGApSjctQAT_dR0dwUcv0i9FQt7mKQ5a4YH401m5Ig=s0?imgmax=0",
+                url="https://maps.app.goo.gl/UY9XC3cm89b4qD8g7",
             ),
         ]
         event = Event(
@@ -130,7 +134,8 @@ if __name__ == "__main__":
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1708859, 136.8837218),
+                address="4-chōme-4-38 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
                 description="愛知県産業労働センター７階展示場",
                 sources=[
                     Source(
@@ -138,6 +143,9 @@ if __name__ == "__main__":
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=plEI7dd2WTUE58egOJKX3g&w=1177&h=1300&yaw=170&pitch=-40",
+                url="https://maps.app.goo.gl/6F2N7Dtys66bRMQQ9",
             ),
         ]
         event = Event(
@@ -191,14 +199,18 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781203776946!5m2!1sen!2sfr",
-                description="京都市勧業館（みやこめっせ） ",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
+                description="京都市勧業館（みやこめっせ）",
                 sources=[
                     Source(
                         vopara_main_url,
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -255,7 +267,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1708859, 136.8837218),
+                address="4-chōme-4-38 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
                 description="愛知県産業労働センター（ウインクあいち） ６階展示場",
                 sources=[
                     Source(
@@ -263,6 +276,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=plEI7dd2WTUE58egOJKX3g&w=1177&h=1300&yaw=170&pitch=-40",
+                url="https://maps.app.goo.gl/6F2N7Dtys66bRMQQ9",
             ),
         ]
         event = Event(
@@ -314,7 +330,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.751071069338!2d135.7783858758542!3d35.01293597281049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2sMiyako%20Messe%20(Kyoto%20International%20Exhibition%20Hall)!5e0!3m2!1sen!2sfr!4v1781203776946!5m2!1sen!2sfr",
+                coordinates=(35.01365, 135.7809429),
+                address="9-1 Okazaki Seishojicho, Sakyo Ward, Kyoto, 606-8343, Japan",
                 description="京都市勧業館（みやこめっせ）第３展示場全面",
                 sources=[
                     Source(
@@ -322,6 +339,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlur6oWztq77DaOuTZLw5MRyj3iDVD1CD-wl9_7wkEXC7e9JYhls5YX8XY6_936CE_RWP6CozLolZI73Mh7gleO-PgU9DJro4VpNaq7nQSPaHd9rChZ-VVge7urD47mbsVOMZ6B-A=s870-k-no",
+                url="https://maps.app.goo.gl/8MjxYFEFKBxjhyTT8",
             ),
         ]
         event = Event(
@@ -385,7 +405,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1708859, 136.8837218),
+                address="4-chōme-4-38 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
                 description="愛知県産業労働センター（ウインクあいち）６階・７階展示場",
                 sources=[
                     Source(
@@ -393,6 +414,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=plEI7dd2WTUE58egOJKX3g&w=1177&h=1300&yaw=170&pitch=-40",
+                url="https://maps.app.goo.gl/6F2N7Dtys66bRMQQ9",
             ),
         ]
         event = Event(
@@ -457,7 +481,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1708859, 136.8837218),
+                address="4-chōme-4-38 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
                 description="愛知県産業労働センター（ウインクあいち） ６階展示場",
                 sources=[
                     Source(
@@ -465,6 +490,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=plEI7dd2WTUE58egOJKX3g&w=1177&h=1300&yaw=170&pitch=-40",
+                url="https://maps.app.goo.gl/6F2N7Dtys66bRMQQ9",
             ),
         ]
         event = Event(
@@ -527,7 +555,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13051.9153575633!2d136.8873299!3d35.1322016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe829a2f51%3A0x284de675a464956a!2sShirotori%20Hall!5e0!3m2!1sen!2sfr!4v1781209672065!5m2!1sen!2sfr",
+                coordinates=(35.1313699, 136.8980176),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
                 description="名古屋国際会議場 白鳥（しろとり）ホール",
                 sources=[
                     Source(
@@ -535,6 +564,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn7Lqm9_Q0NEdha1ASXnQ5vdfjHbPJAbiquEME-dTc0IQlVMwwldl4PgCGmoqwXy7f1H0VzeeQ34Sfh31dwy-yLo6SG1i6J7RxOt2LCAXGM3sea6CVPSdGtLv8BqQvcjQ9wGbdq8g=s0?imgmax=0",
+                url="https://maps.app.goo.gl/WvWpsu1s7P6fTsdj9",
             ),
         ]
         event = Event(
@@ -584,7 +616,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1708859, 136.8837218),
+                address="4-chōme-4-38 Meieki, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
                 description="愛知県名古屋市熱田区熱田西町1番1号名古屋国際会議場 イベントホール",
                 sources=[
                     Source(
@@ -592,6 +625,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?output=thumbnail&cb_client=maps_sv.tactile.gps&panoid=plEI7dd2WTUE58egOJKX3g&w=1177&h=1300&yaw=170&pitch=-40",
+                url="https://maps.app.goo.gl/6F2N7Dtys66bRMQQ9",
             ),
         ]
         event = Event(
@@ -641,7 +677,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437129685104!2d136.8818411804513!3d35.17065601254546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376dc4791c681%3A0x862a713c2f107a48!2zSmFwYW4sIOOAkjQ1MC0wMDAyIEFpY2hpLCBOYWdveWEsIE5ha2FtdXJhIFdhcmQsIE1laWVraSwgNC1jaMWNbWXiiJI04oiSMzgg5oSb55-l55yM55Sj5qWt5Yq05YON44K744Oz44K_44O877yI44Km44Kk44Oz44Kv44GC44GE44Gh77yJ!5e0!3m2!1sen!2sfr!4v1781203309542!5m2!1sen!2sfr",
+                coordinates=(35.1313699, 136.8980176),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
                 description="愛知県愛知県名古屋市熱田区熱田西町1番1号名古屋国際会議場 白鳥ホール",
                 sources=[
                     Source(
@@ -649,6 +686,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn7Lqm9_Q0NEdha1ASXnQ5vdfjHbPJAbiquEME-dTc0IQlVMwwldl4PgCGmoqwXy7f1H0VzeeQ34Sfh31dwy-yLo6SG1i6J7RxOt2LCAXGM3sea6CVPSdGtLv8BqQvcjQ9wGbdq8g=s0?imgmax=0",
+                url="https://maps.app.goo.gl/WvWpsu1s7P6fTsdj9",
             ),
         ]
         event = Event(
@@ -698,7 +738,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.000972522528!2d136.8957839758592!3d35.13164927276959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe92208121%3A0xc830505a7700eaa6!2sNagoya%20Congress%20Center!5e0!3m2!1sen!2sfr!4v1781211470110!5m2!1sen!2sfr",
+                coordinates=(35.1316493, 136.895784),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
                 description="名古屋国際会議場 イベントホール",
                 sources=[
                     Source(
@@ -706,6 +747,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWktkJOUF1Dj75m5uf1NOu4f4ZSJqePSniPmQ-lFQLZKHHxYlMXIXqwIYRDL1Pz6uwvqNAVoxKFi8CsA2ShNX_STmUZUEoRQOhzKg37OkNQAgQS_TmjI_P2eocrZPK8YLDcj5hIMRA=s0?imgmax=0",
+                url="https://maps.app.goo.gl/ZKEKnswpsBoZELkp6",
             ),
         ]
         event = Event(
@@ -755,7 +799,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.000972522528!2d136.8957839758592!3d35.13164927276959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe92208121%3A0xc830505a7700eaa6!2sNagoya%20Congress%20Center!5e0!3m2!1sen!2sfr!4v1781211470110!5m2!1sen!2sfr",
+                coordinates=(35.1316493, 136.895784),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
                 description="名古屋国際会議場 イベントホール",
                 sources=[
                     Source(
@@ -763,6 +808,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWktkJOUF1Dj75m5uf1NOu4f4ZSJqePSniPmQ-lFQLZKHHxYlMXIXqwIYRDL1Pz6uwvqNAVoxKFi8CsA2ShNX_STmUZUEoRQOhzKg37OkNQAgQS_TmjI_P2eocrZPK8YLDcj5hIMRA=s0?imgmax=0",
+                url="https://maps.app.goo.gl/ZKEKnswpsBoZELkp6",
             ),
         ]
         event = Event(
@@ -814,7 +862,8 @@ D～H … VOCALOID PARADISE 2""",
         ]
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13051.9153575633!2d136.8873299!3d35.1322016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600379fe829a2f51%3A0x284de675a464956a!2sShirotori%20Hall!5e0!3m2!1sen!2sfr!4v1781209672065!5m2!1sen!2sfr",
+                coordinates=(35.1313699, 136.8980176),
+                address="1-1 Atsuta Nishimachi, Atsuta Ward, Nagoya, Aichi 456-0036, Japan",
                 description="名古屋国際会議場 白鳥ホール",
                 sources=[
                     Source(
@@ -822,6 +871,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn7Lqm9_Q0NEdha1ASXnQ5vdfjHbPJAbiquEME-dTc0IQlVMwwldl4PgCGmoqwXy7f1H0VzeeQ34Sfh31dwy-yLo6SG1i6J7RxOt2LCAXGM3sea6CVPSdGtLv8BqQvcjQ9wGbdq8g=s0?imgmax=0",
+                url="https://maps.app.goo.gl/WvWpsu1s7P6fTsdj9",
             ),
         ]
         event = Event(
@@ -857,7 +909,8 @@ D～H … VOCALOID PARADISE 2""",
         media_ = []
         locations = [
             Location(
-                iframe_url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.866190194564!2d137.1268545758678!3d35.33414417270119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a70848ce44f%3A0xaea80b3888b9c8db!2sSangyobunka%20Center!5e0!3m2!1sen!2sfr!4v1781213114333!5m2!1sen!2sfr",
+                coordinates=(35.77736, 137.5619255),
+                address="Japan, 〒507-0831 Gifu, Tajimi, Shinmachi, 1 Chome−２３",
                 description="多治見市産業文化センター ５階ホール",
                 sources=[
                     Source(
@@ -865,6 +918,9 @@ D～H … VOCALOID PARADISE 2""",
                         (ReliabilityTypes.Reliable, OriginTypes.Official),
                     )
                 ],
+                # comments=None,
+                imageUrl="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkSZuwNxFhmlk_wbB5TDxN1XQ33eBXjMchn6XpudPnnmfnYGW-1Ik4UqKwx05HvOK3hm7_ry8bDbf8ZrrO3pZXIgd_0FAnI-WPdGWIfhiv8vRSXNboVBmnbFgP0FXuO62tPYsg8GQ=s812-k-no",
+                url="https://maps.app.goo.gl/vQXSpphcMZdTU78u5",
             ),
         ]
         event = Event(
