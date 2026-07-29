@@ -909,7 +909,7 @@ D～H … VOCALOID PARADISE 2""",
         media_ = []
         locations = [
             Location(
-                coordinates=(35.77736, 137.5619255),
+                coordinates=(35.334103, 137.1288233),
                 address="Japan, 〒507-0831 Gifu, Tajimi, Shinmachi, 1 Chome−２３",
                 description="多治見市産業文化センター ５階ホール",
                 sources=[
