@@ -67,10 +67,10 @@ def retrieve_circles(event_name: str) -> list[Circle]:
 
 if __name__ == "__main__":
     events: list[Event] = []
-    active_events: list[int | str] = list(range(1, 14 + 1))
+    disabled_events: list[int | str] = []
 
     i = 1  # ==== vopara1 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para_list.htm"
@@ -123,7 +123,7 @@ if __name__ == "__main__":
         events.append(event)
 
     i = 2  # ==== vopara2 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = ""
@@ -175,7 +175,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 3  # ==== vopara3 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para03_list.htm"
@@ -244,7 +244,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 4  # ==== vopara4 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para04_list.htm"
@@ -306,7 +306,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 5  # ==== vopara5 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para05_list.htm"
@@ -378,7 +378,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 6  # ==== vopara6 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para06_list.htm"
@@ -450,7 +450,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 7  # ==== vopara7 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para07_list.htm"
@@ -520,7 +520,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 8  # ==== vopara8 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para08_list.htm"
@@ -594,7 +594,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 9  # ==== vopara9 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para09_list.htm"
@@ -655,7 +655,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 10  # ==== vopara10 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para10_list.htm"
@@ -716,7 +716,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 11  # ==== vopara11 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para11_list.htm"
@@ -777,7 +777,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 12  # ==== vopara12 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para12_list.htm"
@@ -838,7 +838,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 13  # ==== vopara13 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         vopara_main_url = "https://ttc.ninja-web.net/vo-para/vo-para13_list.htm"
@@ -901,7 +901,7 @@ D～H … VOCALOID PARADISE 2""",
         events.append(event)
 
     i = 14  # ==== vopara14 ====
-    if i in active_events:
+    if i not in disabled_events:
         event_name = f"vopara{i}"
         print(f"Processing {event_name} ...")
         # vopara_main_url = ""
