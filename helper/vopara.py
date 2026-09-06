@@ -911,7 +911,7 @@ D～H … VOCALOID PARADISE 2""",
             Location(
                 coordinates=(35.334103, 137.1288233),
                 address="Japan, 〒507-0831 Gifu, Tajimi, Shinmachi, 1 Chome−２３",
-                description="多治見市産業文化センター ５階ホール",
+                description="多治見市産業文化センター ５階ホール (CANCELLED)",
                 sources=[
                     Source(
                         "https://web.archive.org/web/20240714193723/http://ttc.ninja-web.net/vo-para/index.html",
