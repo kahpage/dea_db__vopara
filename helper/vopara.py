@@ -925,7 +925,7 @@ D～H … VOCALOID PARADISE 2""",
         ]
         event = Event(
             aliases=[f"VOCALOID PARADISE {i}", f"ボーパラ{i}"],
-            dates="2019.10.20 -> CANCELLED",
+            dates="2019.10.20 → CANCELLED",
             circles=[],
             media=media_,
             sources=[
